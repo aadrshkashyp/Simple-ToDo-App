@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TO-DO App | SkillSafari</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <section>
+      <div
+        class="container flex flex-col items-center px-4 py-12 mx-auto text-center"
+      >
+        <h1 class="title-font sm:text-4xl text-3xl font-medium text-white">
+          ToDo App
+        </h1>
+
+        <div class="mt-6 sm:-mx-2">
+          <div class="inline-flex w-full sm:w-auto sm:mx-2">
+            <a
+              href="https://skillsafari.in/"
+              class="inline-flex items-center justify-center w-full px-5 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+            >
+              SkillSafari
+            </a>
+          </div>
+
+          <div class="inline-flex w-full mt-4 sm:w-auto sm:mx-2 sm:mt-0">
+            <a
+              href="https://aadarshkashyap.pw/"
+              class="inline-flex items-center justify-center w-full px-5 py-2 text-gray-700 transition-colors duration-150 transform bg-white border border-gray-200 rounded-lg dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:text-white sm:w-auto dark:hover:bg-gray-800 dark:ring-gray-700 focus:ring focus:ring-gray-200 focus:ring-opacity-80"
+            >
+              My Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- header end -->
+
+    <!-- todo app starting -->
+    <section class="dark:bg-gray-800">
+      <div class="max-w-3xl px-6 py-16 mx-auto text-center">
+        <div
+          id="newtask"
+          class="flex flex-col mt-5 space-y-3 sm:space-y-0 sm:flex-row sm:justify-center sm:-mx-2"
+        >
+          <input
+            type="text"
+            class="px-4 py-2 text-gray-700 border rounded-md sm:mx-2 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+            placeholder="Add Task Here"
+          />
+
+          <button
+            id="push"
+            class="px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-700 rounded-md sm:mx-2 hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          >
+            Add
+          </button>
+        </div>
+        <div class="mt-4 md:mx-4 md:mt-0" id="tasks"></div>
+      </div>
+    </section>
+    <!-- todo app end -->
+
+    <!-- footer -->
+    <div
+      class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800"
+    >
+      <div class="flex justify-center -mt-16 md:justify-end">
+        <img
+          class="object-cover w-20 h-20 border-2 border-blue-500 rounded-full dark:border-blue-400"
+          alt="Testimonial avatar"
+          src="https://aadarshkashyap.pw/assets/images/profile-1.png"
+        />
+      </div>
+
+      <h2
+        class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl"
+      >
+        Aadarsh Kashyap
+      </h2>
+
+      <p class="mt-2 text-gray-600 dark:text-gray-200">
+        Hi, I'm Aadarsh Kashyap A Website Developer based in India, who’s
+        passionate about bringing crazy ideas to Life Server.
+      </p>
+    </div>
+    <!-- footer end -->
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
